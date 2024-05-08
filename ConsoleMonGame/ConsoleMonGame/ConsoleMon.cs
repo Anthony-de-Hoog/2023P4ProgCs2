@@ -21,7 +21,7 @@ namespace ConsoleMonGame
 
         internal void DepleteEnergy(int energy)
         {
-           this.energy = energy - energy;
+           this.energy -= energy;
         }
 
     }
