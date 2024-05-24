@@ -14,7 +14,9 @@ namespace ConsoleMonGame
 
         internal string name;
 
-        internal void damage(int damage)
+        internal Element weakness;
+
+        internal void TakeDamage(int damage)
         {
              health = health - damage;
         }

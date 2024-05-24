@@ -10,7 +10,7 @@
             {
                 Console.WriteLine("TestConsoleMonFunctions");
                 ConsoleMon mon = new ConsoleMon();
-                mon.damage(100);
+                mon.TakeDamage(100);
                 mon.DepleteEnergy(20);
 
                 Console.WriteLine(mon.health == -100);
@@ -30,10 +30,13 @@
                 };
                 skill.UseOn(targetMon, casterMon);
 
-                Console.WriteLine(targetMon.health == -100);
+                Console.WriteLine(targetMon.health == -150);
 
                 Console.WriteLine(casterMon.energy == -20);
             }
+
+            TestConsoleMonFunctions();
+            TestSkillFunctions();
         }
     }
 }
